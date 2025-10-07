@@ -4,7 +4,13 @@
 Hello World!
 
 ### W2
-Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
+The r, g, and b variables are floats because they are numbers and have decimal points/are not whole integers.
+
+The _bounce variable is an int because it is assigned whole integers and will never have a decimal point.
+
+The line of code was missing a semicolon at the end of the line.
+
+### W3
 
 ## Open-Source Assets
 ### W1
