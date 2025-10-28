@@ -31,7 +31,7 @@ public class CatW5 : MonoBehaviour
         //          changing that axis?
         //      Should I modify translation with Vector addition, or multiplication,
         //          or both?
-        //
+            
         // STEP 2
         // After Step 1 is working, add more code to make it possible to flip
         //      the player's control scheme.
@@ -46,7 +46,20 @@ public class CatW5 : MonoBehaviour
         Vector3 translation = Vector3.zero;
         
 
+        if (Input.GetKey(KeyCode.W))
+        {
+            translation.z = 1;
+        } else if (Input.GetKey(KeyCode.S)) 
+        {
+            translation.z = -1;
+        }
 
+        if (_flipWSControls == true)
+        {
+            translation *= -1;
+        }
+
+        transform.Translate(translation * _moveSpeed * Time.deltaTime);
         // STEP 1 & 2 ---------------------------------------------------------
 
         float rotation = Input.GetAxis("Horizontal") * _turnSpeed * Time.deltaTime;

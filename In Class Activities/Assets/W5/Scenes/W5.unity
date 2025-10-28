@@ -1997,7 +1997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17c3416f57a6407594216d570227c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatW5
-  _flipWSControls: 0
+  _flipWSControls: 1
   _moveSpeed: 2.5
   _turnSpeed: 100
   _animator: {fileID: 1977093712}
@@ -2807,6 +2807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5397889845544582581}
   - component: {fileID: 8162393976267690957}
+  - component: {fileID: 8162393976267690959}
   m_Layer: 0
   m_Name: Deer_001
   m_TagString: Untagged
@@ -3456,6 +3457,28 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.000012516975, y: 1.1041903, z: -0.17470488}
     m_Extent: {x: 0.53105116, y: 1.1470425, z: 0.75902236}
   m_DirtyAABB: 0
+--- !u!195 &8162393976267690959
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3376474528543089435}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.9337274
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 4.502466
+  m_BaseOffset: 2.251233
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!4 &8189561630403179307
 Transform:
   m_ObjectHideFlags: 0
@@ -3603,6 +3626,7 @@ GameObject:
   - component: {fileID: 8189561630403179307}
   - component: {fileID: 8189561630403179319}
   - component: {fileID: 8857729742412573074}
+  - component: {fileID: 8857729742412573075}
   m_Layer: 0
   m_Name: Deer
   m_TagString: Untagged
@@ -3632,6 +3656,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8857729742412573075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857729742412573073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec4dc8e091c94263b31ed5edd963f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeerW5
+  _target: {fileID: 1977093708}
 --- !u!1 &8984736127648626612
 GameObject:
   m_ObjectHideFlags: 0

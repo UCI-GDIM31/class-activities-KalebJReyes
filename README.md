@@ -22,6 +22,13 @@ The parameters would be an integer to check the current level of friendship and 
 Table 11
 Line 17 declares a boolean member variable called "_isGrounded" and sets it to true. Line 28 is the start of an if statement that checks if the player pressed space and if the _isGrounded member variable is true. The if statement makes the cat jump. Line 32 sets "_isGrounded" to false. The "_isGrounded" variable is meant to show whether or not the cat is on the ground.
 
+### W5
+1. Question: What parameters go in the parenthesis in the GetComponent method?
+
+Answer: The type of component we are trying to get according to unity documentation
+
+2. To start, we have to define the class. For the member variables, we need to make a serialized field for the game object that we want the deer to follow and define the NavMeshAgent. Depending on whether or not we want the deer to continuously follow the game object, we would use either the start or update method, start to make the deer go to the game object once and update to make the deer continuously follow the object. In the method, we need to get the NavMeshAgent component and set the destination.
+
 1. The objects I gave rigid bodies to were the cat and the soccerball because we needed those to have physics, the cat needs to be able to jump and have gravity and the ball needs to be able to get kicked around and bounce. The goal has the is Trigger checked because we just want the collider to check whether or not the ball passed it. The goal did not need a physical collider.
 2. When I started testing my code, everything worked as intended on the first try. I did have some issues figuring out some parts of the code. For example, when making the OnTriggerEnter method, I forgot to declare what the method would return so I just had to add void since it doesn't return anything.
 ## Open-Source Assets
