@@ -31,6 +31,11 @@ Answer: The type of component we are trying to get according to unity documentat
 
 1. The objects I gave rigid bodies to were the cat and the soccerball because we needed those to have physics, the cat needs to be able to jump and have gravity and the ball needs to be able to get kicked around and bounce. The goal has the is Trigger checked because we just want the collider to check whether or not the ball passed it. The goal did not need a physical collider.
 2. When I started testing my code, everything worked as intended on the first try. I did have some issues figuring out some parts of the code. For example, when making the OnTriggerEnter method, I forgot to declare what the method would return so I just had to add void since it doesn't return anything.
+
+### W6
+1. Category: Math   https://docs.google.com/document/d/1jGkW1Q2xP_713KL3rIzM0yPQ_F7CGMHJ1AHQlTPs5pg/edit?usp=sharing
+
+2. We need to make 2 member variables, one for speed and the other for the player's transform. In the update method, we need to make the bat move towards the player using Vector3.MoveTowards. In the chase method, all we need to do is enable the component and in the stop chase method, we have to disable the component.
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
