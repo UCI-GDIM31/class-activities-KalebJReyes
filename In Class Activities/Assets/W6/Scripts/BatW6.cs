@@ -21,7 +21,6 @@ public class BatW6 : MonoBehaviour
     public void Chase() 
     {
         enabled = true;
-
     }
 
     public void StopChase() 
