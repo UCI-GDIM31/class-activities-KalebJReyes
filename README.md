@@ -36,6 +36,12 @@ Answer: The type of component we are trying to get according to unity documentat
 1. Category: Math   https://docs.google.com/document/d/1jGkW1Q2xP_713KL3rIzM0yPQ_F7CGMHJ1AHQlTPs5pg/edit?usp=sharing
 
 2. We need to make 2 member variables, one for speed and the other for the player's transform. In the update method, we need to make the bat move towards the player using Vector3.MoveTowards. In the chase method, all we need to do is enable the component and in the stop chase method, we have to disable the component.
+
+### W7
+1. Wasn't present in class, I just wanted to do the activity and not fall behind too much
+
+2. The code in step 2 used position instead of translate. We want to use translate in this case because position doesn't account for the rotation of the gameobject which can make the movement inaccurate.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
